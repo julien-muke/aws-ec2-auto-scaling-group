@@ -29,7 +29,7 @@ Step 6. Designing and Creating a Launch Template
 
 Step 7. Configure Auto Scaling Group
 
-Step 8.Testing our setup
+Step 8. Testing our setup
 
 
 ## ➡️ Step 1 - Setting up VPC (Virtual Private Cloud)
