@@ -1,43 +1,35 @@
-# ![aws](https://github.com/julien-muke/Search-Engine-Website-using-AWS/assets/110755734/01cd6124-8014-4baa-a5fe-bd227844d263)     Deploy Nextjs App to AWS with Amplify Hosting.
+# ![aws](https://github.com/julien-muke/Search-Engine-Website-using-AWS/assets/110755734/01cd6124-8014-4baa-a5fe-bd227844d263)     How to Create an Auto Scaling Group of EC2 Instances.
 
 
 ## <a name="introduction">🤖 Introduction</a>
 
-In this demo, i'm going to show you how i deployed my portfolio website to AWS with Amplify and set up a custom domain in AWS Route 53.
+This tutorial provides a hands-on introduction to Amazon EC2 Auto Scaling through the AWS Management Console. You'll create a launch template that defines your EC2 instances and an Auto Scaling group with a single instance in it. After launching your Auto Scaling group, you'll terminate the instance and verify that the instance was removed from service and replaced. To maintain a constant number of instances, Amazon EC2 Auto Scaling detects and responds to Amazon EC2 health and reachability checks automatically.
 
-## <a name="design">📐 Project Architecture</a>
+## <a name="design">📐 Diagram Architecture</a>
 
-![Nextjs-9](https://github.com/julien-muke/deploy-nextjs-app-on-aws-amplify/assets/110755734/ff268da1-4ef4-40b8-9bec-cee842426f82)
+![AWS EC2 Auto Scaling](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/274005ff-7950-4846-8feb-3f64f0e927d1)
 
-
-## 📝 Prerequisites
-
-Before you begin this tutorial, complete the following prerequisites.
-
-* **Sign up for an AWS account:**
-
-You need to [create an AWS account](https://portal.aws.amazon.com/billing/signup#/start/email) by following the online instructions. Signing up enables you to access Amplify and other AWS services that you can use with your application.
-
-* **Create an application:**
-
-Create a basic Next.js application to use for this tutorial, using the [create-next-app](https://nextjs.org/docs/app/api-reference/create-next-app) instructions in the Next.js documentation.
-
-* **Create a Git repository:**
-
-Amplify supports [GitHub](https://github.com/signup), Bitbucket, GitLab, and AWS CodeCommit. Push your `create-next-app` application to your Git repository.
 
 
 ## <a name="steps">☑️ Steps</a>
 
 The procedure for deploying this architecture on AWS consists of the following steps:
 
-Step 1. Create and configure a Next.js 14 app
+Step 1. Setting up VPC (Virtual Private Cloud)
 
-Step 2. Push your Next.js 14 app to GitHub
+Step 2. Configuring Internet Gateway
 
-Step 3. Set up AWS Amplify & Deploy the Next.js 14 app
+Step 3. Configuring Subnet
 
-Step 4. Configure the custom domain in AWS Amplify with AWS Route 53
+Step 4. Creating a Target Group
+
+Step 5. Setting up an Application Load Balancer
+
+Step 6. Designing and Creating a Launch Template
+
+Step 7. Configure Auto Scaling Group
+
+Step 8.Testing our setup
 
 
-## ➡️ Step 1 - Create and configure a Next.js 14 app
+## ➡️ Step 1 - Setting up VPC (Virtual Private Cloud)
