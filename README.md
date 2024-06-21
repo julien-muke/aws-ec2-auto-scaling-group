@@ -48,3 +48,22 @@ To create a VPC, subnets, and other VPC resources using the console:
 
 ## ➡️ Step 2 - Configuring Internet Gateway
 
+To create an internet gateway:
+
+1. Open the Amazon VPC console at https://console.aws.amazon.com/vpc/.
+2. In the navigation pane, choose Internet gateways.
+3. Choose Create internet gateway.
+4. Enter a name for your internet gateway.
+
+![2](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/6e011d40-6d92-4cfb-b22d-35c95f1160c9)
+
+**To use an internet gateway, you must attach it to a VPC**
+
+5. Choose Actions, Attach to VPC.
+
+![3](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/d1cf899c-dbba-4bb4-aa5f-c5f0ffae75c0)
+
+6. Select an available VPC.
+7. Choose Attach internet gateway.
+
+![4](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/472c3f64-1e75-4e3f-977d-05b6176b45d0)
