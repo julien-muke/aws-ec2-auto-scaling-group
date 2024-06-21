@@ -112,5 +112,20 @@ To determine the route table for a subnet:
 
 ![8](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/72d61571-4a60-4419-89f6-be5abef1cc69)
 
+Our route table has been associated with our subnet but this route table is also provide the internet access and that we for that we need to edit our route. 
+
+a. On route table section, under Tab choose Routes, then edit routes.
+
+![9](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/4aa3a6df-d7c7-454c-9148-e05efe60ba21)
+
+
+c. Under Edit route, choose add route
+d. Enter IP address `0.0.0.0/0` which means any resources associated with route table can be accessed via internet.
+e. For Target, choose Internet Gatway, then choose the internet Gateway which we have created previously `igw-test`
+f. Choose Save changes
+
+![10](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/1d8815a8-1673-4a65-962c-1246227ff69e)
+
+
 
 
