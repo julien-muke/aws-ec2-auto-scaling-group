@@ -87,7 +87,7 @@ Note: We are going to create 2 pubilc subnet in two Availability Zones: `us-east
 ![5 copy 2](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/1aa5ac4f-abdd-4f25-bf2c-f9bca180447a)
 
 
-Note: To create another subnet, choose add new suhnet and repeat the same process mentioned above but for Subnet name enter `test-public-subnet-1b`, for Availability Zone choose `US East (N. Virginia) / us-east-1b`, for IPv4 subnet CIDR block enter `12.0.3.0/24`. When you are done creating 2 subnets, Choose Create subnet.
+Note: To create another subnet, choose add new suhnet and repeat the same procedure mentioned above but for second Subnet name enter `test-public-subnet-1b`, for Availability Zone choose `US East (N. Virginia) / us-east-1b`, for IPv4 subnet CIDR block enter `12.0.3.0/24`. When you are done creating 2 subnets, Choose Create subnet.
 
 
 
