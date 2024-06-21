@@ -89,5 +89,28 @@ Note: We are going to create 2 pubilc subnet in two Availability Zones: `us-east
 
 Note: To create another subnet, choose add new suhnet and repeat the same procedure mentioned above but for second Subnet name enter `test-public-subnet-1b`, for Availability Zone choose `US East (N. Virginia) / us-east-1b`, for IPv4 subnet CIDR block enter `12.0.3.0/24`. When you are done creating 2 subnets, Choose Create subnet.
 
+**Let's Determine the route table for a subnet**
+
+To determine the route table for a subnet:
+
+1. Open the Amazon VPC console, on the left hand side choose Choose the Route table tab.
+2. Choose Create route table
+3. Enter Route table name `rt-test-public`
+4. Under VPC choose `test-vpc`
+
+![6](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/f869309c-5d4b-49d7-a687-4076b053f9b1)
+
+**Let's associate the route table into the subnet**
+
+1. On the route table console, choose Subnet associations tab.
+2. Then choose Edit subnet associations.
+
+![7](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/7c033537-5a18-414b-8add-7de30db10cec)
+
+
+3. Select both subnets and choose Save associations.
+
+![8](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/72d61571-4a60-4419-89f6-be5abef1cc69)
+
 
 
