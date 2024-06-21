@@ -33,3 +33,18 @@ Step 8. Testing our setup
 
 
 ## ➡️ Step 1 - Setting up VPC (Virtual Private Cloud)
+
+To create a VPC, subnets, and other VPC resources using the console:
+
+1. Open the Amazon VPC console at https://console.aws.amazon.com/vpc/
+2. On the VPC dashboard, choose Create VPC.
+3. For Resources to create, choose VPC only.
+4. Enter the Name tag `test-vpc`
+5. For IPv4 CIDR block, enter an IPv4 address range for the VPC `12.0.0.0/16`
+6. Leave the rest as default, choose Create VPC.
+
+![1](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/a4dd7f05-adc7-4a39-b03c-c464a2219888)
+
+
+## ➡️ Step 2 - Configuring Internet Gateway
+
