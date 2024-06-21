@@ -67,3 +67,27 @@ To create an internet gateway:
 7. Choose Attach internet gateway.
 
 ![4](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/472c3f64-1e75-4e3f-977d-05b6176b45d0)
+
+
+## ➡️ Step 3 - Configuring Subnet
+
+To add a subnet to your VPC:
+
+1. Open the Amazon VPC console, in the navigation pane, choose Subnets, then choose Create subnet.
+2. Under VPC ID, choose the VPC for the subnet `test-vpc`
+
+![5 copy](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/c7fe50d2-62e9-4e1b-9d9a-7a69a1f77666)
+
+Note: We are going to create 2 pubilc subnet in two Availability Zones: `us-east-1a` and `us-east-1b`
+
+3. For Subnet name, enter a name for your subnet `test-public-subnet-1a`
+4. Under Availability Zone, Choose the zone in which vour subnet will reside `US East (N. Virginia) / us-east-la`
+5. For IPV4 subnet CIDR block, select Manual input to enter an IPV4 subnet CIDR block for your subnet `12.0.1.0/24`
+
+![5 copy 2](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/1aa5ac4f-abdd-4f25-bf2c-f9bca180447a)
+
+
+Note: To create another subnet, choose add new suhnet and repeat the same process mentioned above but for Subnet name enter `test-public-subnet-1b`, for Availability Zone choose `US East (N. Virginia) / us-east-1b`, for IPv4 subnet CIDR block enter `12.0.3.0/24`. When you are done creating 2 subnets, Choose Create subnet.
+
+
+
