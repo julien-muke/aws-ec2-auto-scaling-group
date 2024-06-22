@@ -25,11 +25,9 @@ Step 4. Creating a Target Group
 
 Step 5. Setting up an Application Load Balancer
 
-Step 6. Designing and Creating a Launch Template
+Step 6. Create an Auto Scaling group using a launch template
 
-Step 7. Configure Auto Scaling Group
-
-Step 8. Testing our setup
+Step 7. Testing our setup
 
 
 ## ➡️ Step 1 - Setting up VPC (Virtual Private Cloud)
@@ -212,6 +210,37 @@ A rules with source of `0.0.0.0/0` or :/0 allow all IP addresses to access your 
 
 15. Review the load balancer configurations and make changes if needed. After you finish reviewing the configurations, choose Create load balancer.
 
+
+## ➡️ Step 6 - Create an Auto Scaling group using a launch template
+
+
+When you create an Auto Scaling group, you must specify the necessary information to configure the Amazon EC2 instances, the Availability Zones and VPC subnets for the instances, the desired capacity, and the minimum and maximum capacity limits.
+
+To configure Amazon EC2 instances that are launched by your Auto Scaling group, you can specify a launch template or a launch configuration. The following procedure demonstrates how to create an Auto Scaling group using a launch template. 
+
+To create an Auto Scaling group using a launch template (console):
+
+1. Open the Amazon EC2 console at https://console.aws.amazon.com/ec2/, and choose Auto Scaling Groups from the navigation pane.
+2. For Auto Scaling group name, enter a name for your Auto Scaling group `asg-ec2-instances-test-demo`
+3. For Launch template, choose create a Launch template
+
+![14](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/585610a7-4562-4578-b1d1-1ea45f5a9992)
+
+4. Choose Create launch template. Enter a name `it-ec2-instances-apache2`
+
+![15](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/1e0b0f90-0e74-493a-ac63-ed926d8cd455)
+
+
+5. Under Launch template contents, fill out each required field and any optional fields as needed:
+
+<br>a. Choose the Application and OS Images (Amazon Machine Image) `Ubuntu Server`
+<br>b. For Instance type, choose a single instance type that's compatible with the AMI that you specified `t2.micro`
+<br>c. Key pair (login): For Key pair name, choose an existing key pair, or choose Create new key pair to create a new one.
+
+For more information, see [Amazon EC2 key pairs and Linux instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html) in the Amazon EC2 User Guide.
+
+<br>d. For Subnet choose Don't include in launch template
+<br>e. For security groups choose the existing one `it-sg-ec2-Instances-apache2`
 
 
 
