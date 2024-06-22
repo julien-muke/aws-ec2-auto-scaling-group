@@ -127,6 +127,32 @@ f. Choose Save changes
 ![10](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/1d8815a8-1673-4a65-962c-1246227ff69e)
 
 
+## ➡️ Step 4 - Creating a Target Group
+
+You register your targets with a target group. By default, the load balancer sends requests to registered targets using the port and protocol that you specified for the target group. You can override this port when you register each target with the target group. 
+
+To create a target group using the console:
+
+1. Open the Amazon EC2 console at https://console.aws.amazon.com/ec2/
+2. On the navigation pane, under Load Balancing, choose Target Groups.
+3. Choose Create target group.
+4. For Choose a target type, select Instances to register targets by instance ID.
+
+![11](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/45f69072-9770-450d-9fd5-b5171405a9c7)
+
+5. For Target group name, type a name for the target group `tg-ec2-apache2`
+
+![11 copy](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/f61d2896-afca-409a-9ca4-66dd8f15af23)
+
+
+6. For VPC, select a virtual private cloud (VPC). Note that for IP addresses target types, the VPCs available for selection are those that support the IP address type that you chose in the previous step `test-vpc`
+7. Leave the rest as default, choose Create target group.
+
+![11 copy 2](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/fe9bc6b7-dc0a-4a84-93af-bbbd154143b4)
+
+
+
+
 
 
 
