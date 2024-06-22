@@ -192,12 +192,13 @@ A security group acts as a virtual firewall for your instance to control inbound
 
 ![13](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/c2ed08a3-3a97-4a26-8071-c0ec386a635f)
 
-11. For Inbound rules, a rules with source of `0.0.0.0/0` or :/0 allow all IP addresses to access your instance. We recommend setting security group rules to allow access from known IP addresses only.
+11. For Inbound rules, choose Add rule.
+
+A rules with source of `0.0.0.0/0` or :/0 allow all IP addresses to access your instance. We recommend setting security group rules to allow access from known IP addresses only. 
+
+12. Choose Create security group
 
 ![13 copy](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/1a452d6f-8dc4-4956-a49c-30dbcf76a8ab)
-
-12. 
-
 
 
 
