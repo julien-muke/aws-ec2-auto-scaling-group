@@ -146,9 +146,30 @@ To create a target group using the console:
 
 
 6. For VPC, select a virtual private cloud (VPC). Note that for IP addresses target types, the VPCs available for selection are those that support the IP address type that you chose in the previous step `test-vpc`
-7. Leave the rest as default, choose Create target group.
+7. Leave the rest as default, Choose Next.
+8. Under Register targets >> Available instances, there are no instances which has been created yet those instances will be created by Auto Scale policy.
+9. choose Create target group.
 
 ![11 copy 2](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/fe9bc6b7-dc0a-4a84-93af-bbbd154143b4)
+
+Now we have created the target group but there is no load balancer associated with this target group yet, we are just going to create that load balancer in the next step.
+
+
+## ➡️ Step 5 - Setting up an Application Load 
+
+To create an Application Load Balancer, you must first provide basic configuration information for your load balancer, such as a name, scheme, and IP address type. Then, you provide information about your network, and one or more listeners. A listener is a process that checks for connection requests. It is configured with a protocol and a port for connections from clients to the load balancer.
+
+To configure your load balancer and listener using the console:
+
+1. Open the Amazon EC2 console at https://console.aws.amazon.com/ec2/.
+2. In the navigation pane, choose Load Balancers.
+3. Choose Create Load Balancer.
+4. Under Application Load Balancer, choose Create.
+5. For Load balancer name, enter a name for your load balancer `alb-ec2-instances-with-asg`
+
+![12](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/044fad9a-dff4-458c-adb8-1941aab903a6)
+
+6. 
 
 
 
