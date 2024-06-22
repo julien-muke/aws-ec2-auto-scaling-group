@@ -200,10 +200,9 @@ A rules with source of `0.0.0.0/0` or :/0 allow all IP addresses to access your 
 
 ![13 copy](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/1a452d6f-8dc4-4956-a49c-30dbcf76a8ab)
 
-
+13. Back to the Application Load Balancer, under security groups, refresh and add the new one `alb-sg-for-http-request`
 
 ![12 copy 2](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/6b6b2dc3-ec8c-4ca6-b511-8f677debf065)
-
 
 8. For Listeners and routing, the default listener accepts HTTP traffic on port `80`. You can keep the default protocol and port, or choose different ones. For Default action, choose the target group that you created. You can optionally choose Add listener to add another listener (for example, an HTTPS listener).
 
