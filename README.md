@@ -169,7 +169,54 @@ To configure your load balancer and listener using the console:
 
 ![12](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/044fad9a-dff4-458c-adb8-1941aab903a6)
 
-6. 
+6. Under Network mapping:
+<br>a. For VPC, select the VPC that you used for your EC2 instances `test-vpc`
+<br>b. For Mappings, enable zones for your load balancer by selecting subnets from two or more Availability Zones `test-public-subnet-1a` and `test-public-subnet-1b` 
+
+![12 copy](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/70a8e4b5-cf3b-482d-9563-7c05d8ab03d8)
+
+
+7. For Security groups, select an existing security group, or create a new one.
+
+Note: The security group for your load balancer must allow it to communicate with registered targets on both the listener port and the health check port. The console can create a security group for your load balancer on your behalf with rules that allow this communication. You can also create a security group and select it instead.
+
+8. Choose create a new security group.
+
+![12 copy 5](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/5f53b942-0c22-48d4-b9bc-1bf7a4dda065)
+
+
+A security group acts as a virtual firewall for your instance to control inbound and outbound traffic. To create a new security group, complete the fields below.
+
+9. Enter security group name `alb-sq-for-http-request`
+10. Select the existing VPC `test-vpc`
+
+![13](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/c2ed08a3-3a97-4a26-8071-c0ec386a635f)
+
+11. For Inbound rules, a rules with source of `0.0.0.0/0` or :/0 allow all IP addresses to access your instance. We recommend setting security group rules to allow access from known IP addresses only.
+
+![13 copy](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/1a452d6f-8dc4-4956-a49c-30dbcf76a8ab)
+
+12. 
+
+
+
+
+![12 copy 2](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/6b6b2dc3-ec8c-4ca6-b511-8f677debf065)
+
+
+8. For Listeners and routing, the default listener accepts HTTP traffic on port `80`. You can keep the default protocol and port, or choose different ones. For Default action, choose the target group that you created. You can optionally choose Add listener to add another listener (for example, an HTTPS listener).
+
+
+![12 copy 3](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/0c532f23-85a6-4668-9f60-a2c34aeae4d6)
+
+
+9. Review the load balancer configurations and make changes if needed. After you finish reviewing the configurations, choose Create load balancer.
+
+
+
+
+
+
 
 
 
