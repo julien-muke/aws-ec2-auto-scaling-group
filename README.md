@@ -105,7 +105,7 @@ To determine the route table for a subnet:
 1. On the route table console, choose Subnet associations tab.
 2. Then choose Edit subnet associations.
 
-![7](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/7c033537-5a18-414b-8add-7de30db10cec)
+![7](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/ce143d0c-cca7-4944-8b57-b5cc65e423bf)
 
 
 3. Select both subnets and choose Save associations.
@@ -116,7 +116,7 @@ Our route table has been associated with our subnet but this route table is also
 
 a. On route table section, under Tab choose Routes, then edit routes.
 
-![9](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/4aa3a6df-d7c7-454c-9148-e05efe60ba21)
+![9](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/3c607053-a4c2-44a0-9719-07e9e161d9ab)
 
 
 c. Under Edit route, choose add route
@@ -125,6 +125,7 @@ e. For Target, choose Internet Gatway, then choose the internet Gateway which we
 f. Choose Save changes
 
 ![10](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/1d8815a8-1673-4a65-962c-1246227ff69e)
+
 
 
 
