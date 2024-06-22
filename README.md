@@ -258,7 +258,23 @@ To create a security group using the console:
 
 ![16](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/0393b040-c590-47cf-aefa-487faf8d2b78)
 
-e. Back to the Launch template, from VPC, choose the VPC refresh and select the VPC we jsut created. The security group can be used only in the VPC for which it is created.
+e. Back to the Launch template, from VPC, choose the VPC refresh and select the VPC we jsut created `it-sg-ec2-instances-apachez`. The security group can be used only in the VPC for which it is created.
+
+f. Enanble Auto-assign public IP
+
+![15 copy 2](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/82bb58cb-e3ee-4b30-85f8-d68c729b1f0a)
+
+g. For User data, we need to install the Apache and we need to have some custom HTML page so that it can show the host IP, copy and paste in field the user data below:
+
+```bash
+#!/bin/bash
+yes | sudo apt update
+yes | sudo apt install apache2
+echo "<h1>Server Details</h1><p><strong>Hostname:</strong> $(hostname)</p><p><strong>IP Address:</strong> $(hostname -I | cut -d" " -f1)</p>" > /var/www/html/index.html
+sudo systemctl restart apache2
+```
+
+![15 copy 3](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/5ae548eb-46a5-493a-b178-fb5714cad8c6)
 
 
 
