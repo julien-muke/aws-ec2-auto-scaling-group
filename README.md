@@ -240,8 +240,25 @@ To create an Auto Scaling group using a launch template (console):
 For more information, see [Amazon EC2 key pairs and Linux instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html) in the Amazon EC2 User Guide.
 
 <br>d. For Subnet choose Don't include in launch template
-<br>e. For security groups choose the existing one `it-sg-ec2-Instances-apache2`
 
+**For security groups let's create a new one:**
+
+By default, new security groups start with only an outbound rule that allows all traffic to leave the resource. You must add rules to enable any inbound traffic or to restrict the outbound traffic.
+
+To create a security group using the console:
+
+* Open the Amazon VPC console at https://console.aws.amazon.com/vpc/
+* In the navigation pane, choose Security groups.
+* Choose Create security group.
+* Enter a name `it-sg-ec2-instances-apache2` and description for the security group. You cannot change the name and description of a security group after it is created.
+* From VPC, choose a VPC. The security group can be used only in the VPC for which it is created `test-vpc`
+* Under Inbound rules, choose add rule, then add HTTP and SSH with source of `0.0.0.0/0` to allow all IP addresses to access your instance.
+* Choose Create security group.
+
+
+![16](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/0393b040-c590-47cf-aefa-487faf8d2b78)
+
+e. Back to the Launch template, from VPC, choose the VPC refresh and select the VPC we jsut created. The security group can be used only in the VPC for which it is created.
 
 
 
