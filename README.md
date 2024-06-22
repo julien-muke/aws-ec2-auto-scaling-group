@@ -280,8 +280,35 @@ h. Choose create Launch template
 
 When you done creating the Launch template, let's go back to the Auto Scaling Group and finish the configuration.
 
+6. On the Choose launch template or configuration page, for Launch template, refresh and choose an existing launch template that we just created `it-ec2-instances-apache2` then choose Next.
+
+![14 copy](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/2295c7e7-e34a-42a2-afc3-525af4039f6f)
+
+7. Under Network, choose the VPC `test-vpc`
+8. For Availability Zones and subnets, add both `test-public-subnet-1a` and `test-public-subnet-1b` then choose Next
+
+![17](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/a86e5635-c9fa-41a2-9cf3-29ceebf58479)
+
+9. On the Configure advanced options page, under Load balancing, choose Attach to an existing load balancer
+10. For Attach to an existing load balancer choose `tg-ec2-apache2| HTTP`
+
+![18](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/eebefa94-4a10-45c0-a418-9403cbac2548)
+
+11. Under Health checks, enable Turn on Elastic Load Balancing health checks.
+12. For Health check grace period, for this demo enter `20` seconds then click on Next
+
+![18 copy](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/cc32e0a3-28f7-401f-985f-bed665b40862)
 
 
+13. For Configure group size and scaling, enter Desired capacity to `2`
+14. For Scaling, enter Min desired capacity to `1` and Max desired capacity to `3`
+15. For Automatic scaling for this demo choose No scaling policies
+
+![19](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/5969d821-6cab-48d2-ab30-90d39f8af137)
+
+16. For notification choose Next, because will not add any notification
+17. Tags are also optional choose Next
+18. Review all the configuration and choose Create Auto Scaling Group
 
 
 
