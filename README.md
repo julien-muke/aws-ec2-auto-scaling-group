@@ -342,11 +342,11 @@ Once our EC2 instances has been initialized properly, next let's test our load b
 
 ![24](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/98bec73b-c32d-4870-9a88-94c4a405cfcc)
 
-Now our Load Balancer is routing the request to the EC2 instances.
+Now the Load Balancer is routing the request to the EC2 instances.
 
 Lastly, we are going to manually delete one EC2 instance, what is going to happen is that the Auto Scaling Group is going to automatically provision another EC2 instance for us so that we get the maximum availability.
 
-Before we do that, as you can see below, for `alb-ec2-instances-with-asg` auto scaling target group, under instance management both our EC2 instances are in healthy state right now.
+Before we do that, as you can see below, for `alb-ec2-instances-with-asg` auto scaling target group, under instance management both our EC2 instances are in healthy status right now.
 
 
 ![25](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/c9d23b12-e735-4d37-af25-d2728fa3554f)
@@ -354,3 +354,8 @@ Before we do that, as you can see below, for `alb-ec2-instances-with-asg` auto s
 As you can see below, If you terminate on EC2 instance, the auto scaling will automatically provision another one because we specified the Desired capacity to `2`.
 
 ![26](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/67a4b22b-20aa-4a2a-944a-a7afd3b120ac)
+
+
+## 💰 Cost
+
+All services used are eligible for the AWS Free Tier. However, charges will incur at some point so it's recommended that you shut down resources after completing this tutorial.
