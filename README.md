@@ -297,7 +297,7 @@ When you done creating the Launch template, let's go back to the Auto Scaling Gr
 11. Under Health checks, enable Turn on Elastic Load Balancing health checks.
 12. For Health check grace period, for this demo enter `20` seconds then click on Next
 
-![18 copy](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/cc32e0a3-28f7-401f-985f-bed665b40862)
+![18 copy](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/3389517d-b740-4184-a3bd-955e79ba9840)
 
 
 13. For Configure group size and scaling, enter Desired capacity to `2`
@@ -310,9 +310,37 @@ When you done creating the Launch template, let's go back to the Auto Scaling Gr
 17. Tags are also optional choose Next
 18. Review all the configuration and choose Create Auto Scaling Group
 
+Note: As soon as you create Autoscaling Group it will automatically start creating the EC2 instances based on the desired capacity which we have specified, in our case it will automatically provision 2 EC2 instances for us.
 
 
+## ➡️ Step 7 - Testing our setup
 
+Once our EC2 instances has been initialized properly, next let's test our load balancer.
+
+1. Back to the Load Balancer console, click on  `alb-ec2-instances-with-asg`
+2. Copy the DNS name and paste it on a browser
+
+
+![20](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/57e45e91-78e9-43b5-b301-6db8892efddb)
+
+
+3. As you can see below we are able to access our EC2 instances.
+4. 2 EC2 Instances with:
+<br>* First IP Address: `12.0.1.239` and if we refresh it will change to;
+<br>* Second IP Address: `12.0.3.109`
+
+![21](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/bcffc8e2-c77f-4c30-9b0c-3a5fd27508f9)
+![22](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/7f27e83f-3a4c-41b3-ac32-7834d211e64a)
+
+
+5. If we go back to the EC2 instance console and verify the IP Addresses we will see the same IP addresses
+<br>* First IP Address: `12.0.1.239`
+
+![23](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/0b39cab2-734e-4729-83a7-bfca677592a1)
+
+<br>* Second IP Address: `12.0.3.109`
+
+![24](https://github.com/julien-muke/aws-ec2-auto-scaling-group/assets/110755734/98bec73b-c32d-4870-9a88-94c4a405cfcc)
 
 
 
