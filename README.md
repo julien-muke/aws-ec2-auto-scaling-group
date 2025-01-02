@@ -3,7 +3,9 @@
 
 ## <a name="introduction">🤖 Introduction</a>
 
-This tutorial provides a hands-on introduction to Amazon EC2 Auto Scaling through the AWS Management Console. You'll create a launch template that defines your EC2 instances and an Auto Scaling group with a single instance in it. After launching your Auto Scaling group, you'll terminate the instance and verify that the instance was removed from service and replaced. To maintain a constant number of instances, Amazon EC2 Auto Scaling detects and responds to Amazon EC2 health and reachability checks automatically.
+In this tutorial, we’ll guide you through the step-by-step process of setting up an Auto Scaling Group for your EC2 instances on AWS. Auto Scaling helps you maintain application availability by automatically adjusting the number of EC2 instances to meet demand, optimize costs, and ensure high performance.
+
+We'll create a launch template that defines your EC2 instances and an Auto Scaling group with a single instance in it. After launching your Auto Scaling group, you'll terminate the instance and verify that the instance was removed from service and replaced. To maintain a constant number of instances, Amazon EC2 Auto Scaling detects and responds to Amazon EC2 health and reachability checks automatically.
 
 ## <a name="design">📐 Diagram Architecture</a>
 
