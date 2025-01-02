@@ -1,5 +1,24 @@
 # ![aws](https://github.com/julien-muke/Search-Engine-Website-using-AWS/assets/110755734/01cd6124-8014-4baa-a5fe-bd227844d263)     How to Create an Auto Scaling Group of EC2 Instances.
 
+<div align="center">
+
+<h3 align="center">How to Create an Auto Scaling Group of EC2 Instances for High Availability</h3>
+
+   <div align="center">
+     Build this hands-on demo step by step with my detailed tutorial on <a href="http://www.youtube.com/@julienmuke/videos" target="_blank"><b>Julien Muke</b></a> YouTube. Feel free to subscribe 🔔!
+    </div>
+</div>
+
+## 🚨 Tutorial
+
+This repository contains the steps corresponding to an in-depth tutorial available on our YouTube
+channel, <a href="http://www.youtube.com/@julienmuke/videos" target="_blank"><b>Julien Muke</b></a>.
+
+If you prefer visual learning, this is the perfect resource for you. Follow my tutorial to learn how to build projects
+like these step-by-step in a beginner-friendly manner!
+
+<a href="https://youtu.be/joP8nzHAKJI?si=TCLQqoX9aOsIEDZG" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/1736fca5-a031-4854-8c09-bc110e3bc16d" /></a>
+
 
 ## <a name="introduction">🤖 Introduction</a>
 
